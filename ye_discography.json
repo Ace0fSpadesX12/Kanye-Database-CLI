@@ -589,7 +589,9 @@
             "Duration": 0,
             "Feature(s)": [],
             "Writer(s)": [
-                "kanye west"
+                "kanye west",
+                "elton john",
+                "bernie taupin"
             ],
             "Producer(s)": [
                 "kanye west"
@@ -602,10 +604,14 @@
             "Duration": 0,
             "Feature(s)": [],
             "Writer(s)": [
-                "kanye west"
+                "kanye west",
+                "antony williams",
+                "walter becker",
+                "donald fagen"
             ],
             "Producer(s)": [
-                "kanye west"
+                "kanye west",
+                "brian 'allday' miller"
             ],
             "Sample": [],
             "Track Description": [],
@@ -618,7 +624,8 @@
                 "kanye west"
             ],
             "Producer(s)": [
-                "kanye west"
+                "kanye west",
+                "mike dean"
             ],
             "Sample": [],
             "Track Description": [],
@@ -648,7 +655,9 @@
                 "john stephens"
             ],
             "Producer(s)": [
-                "kanye west"
+                "kanye west",
+                "dj toomp",
+                "mike dean"
             ],
             "Sample": [],
             "Track Description": [],
@@ -783,6 +792,172 @@
             "Sample": [],
             "Track Description": [],
             "Track Number": 14
+        }
+    },
+    "808s & Heartbreaks": {
+        "Say You Will": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 1
+        },
+        "Welcome to Heartbreak": {
+            "Duration": 0,
+            "Feature(s)": [
+                "kid cudi"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 2
+        },
+        "Heartless": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 3
+        },
+        "Amazing": {
+            "Duration": 0,
+            "Feature(s)": [
+                "young jeezy"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 4
+        },
+        "Love Lockdown": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 5
+        },
+        "Paranoid": {
+            "Duration": 0,
+            "Feature(s)": [
+                "mr hudson"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 6
+        },
+        "RoboCop": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 7
+        },
+        "Street Lights": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 8
+        },
+        "Bad News": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 9
+        },
+        "See You in My Nightmares": {
+            "Duration": 0,
+            "Feature(s)": [
+                "lil wayne"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 10
+        },
+        "Coldest Winter": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 11
+        },
+        "Pinnocchio Story (Freestyle Live from Singapore) (Hidden Track)": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 12
         }
     }
 }

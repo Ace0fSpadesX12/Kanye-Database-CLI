@@ -410,7 +410,7 @@ ye_discography = {
         "Good Morning" : {
             "Duration": 0,
             "Feature(s)" : [],
-            "Writer(s)" : ["kanye west"],
+            "Writer(s)" : ["kanye west", "elton john", "bernie taupin"],
             "Producer(s)" : ["kanye west"],
             "Sample" : [],
             "Track Description" : [],
@@ -419,8 +419,8 @@ ye_discography = {
         "Champion" : {
             "Duration": 0,
             "Feature(s)" : [],
-            "Writer(s)" : ["kanye west"],
-            "Producer(s)" : ["kanye west"],
+            "Writer(s)" : ["kanye west", "antony williams", "walter becker", "donald fagen"],
+            "Producer(s)" : ["kanye west", "brian 'allday' miller"],
             "Sample" : [],
             "Track Description" : [],
             "Track Number" : 2,
@@ -429,7 +429,7 @@ ye_discography = {
             "Duration": 0,
             "Feature(s)" : [],
             "Writer(s)" : ["kanye west"],
-            "Producer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west", "mike dean"],
             "Sample" : [],
             "Track Description" : [],
             "Track Number" : 3,
@@ -447,7 +447,7 @@ ye_discography = {
             "Duration": 0,
             "Feature(s)" : ["t-pain"],
             "Writer(s)" : ["kanye west", "miri ben-ari", "john stephens"],
-            "Producer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west", "dj toomp", "mike dean"],
             "Sample" : [],
             "Track Description" : [],
             "Track Number" : 5,
@@ -546,7 +546,7 @@ ye_discography = {
         },
         "Welcome to Heartbreak" : {
             "Duration": 0,
-            "Feature(s)" : [],
+            "Feature(s)" : ["kid cudi"],
             "Writer(s)" : ["kanye west"],
             "Producer(s)" : ["kanye west"],
             "Sample" : [],
@@ -564,7 +564,7 @@ ye_discography = {
         },
         "Amazing" : {
             "Duration": 0,
-            "Feature(s)" : [],
+            "Feature(s)" : ["young jeezy"],
             "Writer(s)" : ["kanye west"],
             "Producer(s)" : ["kanye west"],
             "Sample" : [],
@@ -582,7 +582,7 @@ ye_discography = {
         },
         "Paranoid" : {
             "Duration": 0,
-            "Feature(s)" : [],
+            "Feature(s)" : ["mr hudson"],
             "Writer(s)" : ["kanye west"],
             "Producer(s)" : ["kanye west"],
             "Sample" : [],
@@ -618,7 +618,7 @@ ye_discography = {
         },
         "See You in My Nightmares" : {
             "Duration": 0,
-            "Feature(s)" : [],
+            "Feature(s)" : ["lil wayne"],
             "Writer(s)" : ["kanye west"],
             "Producer(s)" : ["kanye west"],
             "Sample" : [],
@@ -627,7 +627,7 @@ ye_discography = {
         },
         "Coldest Winter" : {
             "Duration": 0,
-            "Feature(s)" : ["chris martin"],
+            "Feature(s)" : [],
             "Writer(s)" : ["kanye west"],
             "Producer(s)" : ["kanye west"],
             "Sample" : [],
@@ -650,7 +650,7 @@ with open("ye_discography.json", "w") as f:
     f.write(json.dumps(ye_discography, indent=4))
 
 def feature_artist_search(album_filter= None):
-    while True:    
+    while True:   
         loop_again = ""
         searched_artist = input("Enter an artist to see if they've been featured on a Kanye West song: ").strip().lower()
         artist_found = False
@@ -661,10 +661,13 @@ def feature_artist_search(album_filter= None):
                 if searched_artist in track_details["Feature(s)"]:
                     artist_found = True
                     total_count += 1
-                    matches.append([track, album])  #save each matching track and album
-                    print(f"Kanye west has featured with {searched_artist} {total_count} times on the following song(s): \n{matches[0]}, from the album {album}.")
-
-        if artist_found == False:
+                    matches.append((track, album))  #save each matching track and album
+        if artist_found:
+            print(f"Kanye west has featured with {searched_artist.title()} {total_count} times on the following song(s): ")
+            for track, album in matches:
+                print(f"{track}, from the album {album}")          
+            #print(f"Kanye west has featured with {searched_artist} {total_count} times on the following song(s): \n{matches}, from the album {album}.")
+        elif artist_found == False:
             print(f"Kanye West has not featured with {searched_artist} on any songs yet.")    
         while loop_again.lower() != "y" and loop_again.lower() != "n":
             loop_again = input("Do you want to search again? (y/n): ")
@@ -672,7 +675,7 @@ def feature_artist_search(album_filter= None):
                 continue
             elif loop_again.lower() == "n":
                 print("(back to main menu...)")
-                main_menu()
+                break
             else:
                 loop_again = input("Invalid input. Do you want to search again? (y/n): ")
 
@@ -722,12 +725,16 @@ album_alias_titles = {
         "Song Count" : 16,
         "Album Nicknames" : ["grad", "3", "#3", "graduation", "3rd"],
     },
+    "808s & Heartbreaks" : {
+        "Song Count" : 12,
+        "Album Nicknames" : ["808s & heartbreaks", "4", "#4", "808s", "heartbreaks", "4th"],
+    }
 }
 
 def main_menu():
     while True:
         print("Your options in program are: \nRandom Generator \nTrack Search \nCollab Search \nExit")
-        user_choice = input("What is your selection? ")
+        user_choice = input("What is your selection? ").strip().lower()
         if user_choice == "Random Generator".strip().lower():
             random_ye_generator()
         elif user_choice == "Exit".lower().strip():
