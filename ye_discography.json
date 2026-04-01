@@ -1,0 +1,788 @@
+{
+    "The College Dropout": {
+        "Intro (Skit)": {
+            "Duration": 19,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 1
+        },
+        "We Don't Care": {
+            "Duration": 239,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west, miri ben-ari, ross vannelli"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [
+                "we don't care contains samples of 'I Just Wanna Stop' written by ross vannelli and performed by the jimmy castor bunch"
+            ],
+            "Track Description": [],
+            "Track Number": 2
+        },
+        "Graduation Day": {
+            "Duration": 82,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west",
+                "miri ben-ari",
+                "john stephens"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 3
+        },
+        "All Falls Down": {
+            "Duration": 223,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west",
+                "lauryn hill"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [
+                "contains interpolations of lauryn hill's 'mystery of iniquity', performed here by syleena johnson."
+            ],
+            "Track Description": [],
+            "Track Number": 4
+        },
+        "I'll Fly Away": {
+            "Duration": 69,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "albert e. brumley"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 5
+        },
+        "Spaceship": {
+            "Duration": 324,
+            "Feature(s)": [
+                "consequence",
+                "glc"
+            ],
+            "Writer(s)": [
+                "kanye west",
+                "leonard harris",
+                "dexter mills",
+                "marvin gaye",
+                "gwen gordy fuqua",
+                "sandra greene"
+            ],
+            "Producer(s)": "kanye west",
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 6
+        },
+        "Jesus Walks": {
+            "Duration": 193,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west",
+                "che smith",
+                "miri ben-ari",
+                "curtis lundy"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 7
+        },
+        "Never Let Me Down": {
+            "Duration": 324,
+            "Feature(s)": [
+                "jay-z",
+                "j. ivy"
+            ],
+            "Writer(s)": [
+                "kanye west",
+                "shawn carter",
+                "james richardson",
+                "michael bolton",
+                "bruce kulick"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 8
+        },
+        "Get Em High": {
+            "Duration": 289,
+            "Feature(s)": [
+                "talib kweli",
+                "common"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 9
+        },
+        "Workout Plan (Skit)": {
+            "Duration": 46,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 10
+        },
+        "The New Workout Plan": {
+            "Duration": 322,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 11
+        },
+        "Slow Jamz": {
+            "Duration": 316,
+            "Feature(s)": [
+                "twista",
+                "jamie foxx"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 12
+        },
+        "Breathe In Breath Out": {
+            "Duration": 246,
+            "Feature(s)": [
+                "ludacris"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west",
+                "Brian Miller"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 13
+        },
+        "School Spirit (Skit)": {
+            "Duration": 78,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 14
+        },
+        "School Spirit": {
+            "Duration": 182,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 15
+        },
+        "School Spirit (Skit 2)": {
+            "Duration": 43,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 16
+        },
+        "Lil Jimmy (Skit)": {
+            "Duration": 53,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 17
+        },
+        "Two Words": {
+            "Duration": 266,
+            "Feature(s)": [
+                "mos def",
+                "freeway",
+                "the boys choir of harlem"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 18
+        },
+        "Through the Wire": {
+            "Duration": 221,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 19
+        },
+        "Family Business": {
+            "Duration": 278,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 20
+        },
+        "Last Call": {
+            "Duration": 760,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west",
+                "michael Perretta",
+                "tony Williams",
+                "ken lewis"
+            ],
+            "Producer(s)": [
+                "kanye west",
+                "evidence"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 21
+        },
+        "Heavy Hitters": {
+            "Duration": 235,
+            "Feature(s)": [
+                "glc"
+            ],
+            "Writer(s)": [
+                "kanye west",
+                "leonard Harris"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 22
+        }
+    },
+    "Late Registration": {
+        "Wake Up Mr. west": {
+            "Duration": 41,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "michael masser",
+                "gerry goffin"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 1
+        },
+        "Heard 'Em Say": {
+            "Duration": 203,
+            "Feature(s)": [
+                "adam levine"
+            ],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west",
+                "jon brion"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 2
+        },
+        "Touch the Sky": {
+            "Duration": 43,
+            "Feature(s)": [
+                "lupe fiasco"
+            ],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 3
+        },
+        "Gold Digger": {
+            "Duration": 207,
+            "Feature(s)": [
+                "jamie foxx"
+            ],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 4
+        },
+        "Skit No. 1": {
+            "Duration": 33,
+            "Feature(s)": [],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 5
+        },
+        "Drive Slow": {
+            "Duration": 272,
+            "Feature(s)": [
+                "glc",
+                "paul wall"
+            ],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 6
+        },
+        "My Way Home": {
+            "Duration": 103,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west",
+                "lonnie Lynn",
+                "gil-scott heron"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [
+                "Perfmored in it's entirety by common"
+            ],
+            "Track Number": 7
+        },
+        "Crack Music": {
+            "Duration": 271,
+            "Feature(s)": [],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 8
+        },
+        "Roses": {
+            "Duration": 245,
+            "Feature(s)": [],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 9
+        },
+        "Bring Me Down": {
+            "Duration": 199,
+            "Feature(s)": [
+                "brandy"
+            ],
+            "Writer(s)": [],
+            "Producer(s)": "kanye west",
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 10
+        },
+        "Addiction": {
+            "Duration": 267,
+            "Feature(s)": [],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 11
+        },
+        "Skit No. 2": {
+            "Duration": 31,
+            "Feature(s)": [],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 12
+        },
+        "Diamonds from Sierra Leone (Remix)": {
+            "Duration": 233,
+            "Feature(s)": [
+                "jay-z"
+            ],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 13
+        },
+        "We Major": {
+            "Duration": 448,
+            "Feature(s)": [],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 14
+        },
+        "Skit No. 3": {
+            "Duration": 33,
+            "Feature(s)": [],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 15
+        },
+        "Hey Mama": {
+            "Duration": 42,
+            "Feature(s)": [],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 16
+        },
+        "Celebration": {
+            "Duration": 42,
+            "Feature(s)": [],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 17
+        },
+        "Skit No. 4": {
+            "Duration": 78,
+            "Feature(s)": [],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 18
+        },
+        "Gone": {
+            "Duration": 333,
+            "Feature(s)": [],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 19
+        },
+        "Diamonds from Sierra Leone (Bonus Track)": {
+            "Duration": 238,
+            "Feature(s)": [],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 20
+        },
+        "Late (Hidden Track)": {
+            "Duration": 230,
+            "Feature(s)": [],
+            "Writer(s)": [],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 21
+        }
+    },
+    "Graduation": {
+        "Good Morning": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 1
+        },
+        "Champion": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 2
+        },
+        "Stronger": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 3
+        },
+        "I Wonder": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 4
+        },
+        "Good Life": {
+            "Duration": 0,
+            "Feature(s)": [
+                "t-pain"
+            ],
+            "Writer(s)": [
+                "kanye west",
+                "miri ben-ari",
+                "john stephens"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 5
+        },
+        "Can't Tell Me Nothing": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 6
+        },
+        "Barry Bonds": {
+            "Duration": 0,
+            "Feature(s)": [
+                "lil wayne"
+            ],
+            "Writer(s)": [
+                "kanye west",
+                "miri ben-ari",
+                "john stephens"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 7
+        },
+        "Drunk and Hot Girls": {
+            "Duration": 0,
+            "Feature(s)": [
+                "mos def"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 8
+        },
+        "Flashing Lights": {
+            "Duration": 0,
+            "Feature(s)": [
+                "dwele"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 9
+        },
+        "Everything I Am": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 10
+        },
+        "The Glory": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 11
+        },
+        "Homecoming": {
+            "Duration": 0,
+            "Feature(s)": [
+                "chris martin"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 12
+        },
+        "Big Brother": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "dj toomp"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 13
+        },
+        "Good Night": {
+            "Duration": 0,
+            "Feature(s)": [
+                "al be back",
+                "mos def"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 14
+        }
+    }
+}
