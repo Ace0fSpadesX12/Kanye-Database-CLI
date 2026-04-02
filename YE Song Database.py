@@ -276,7 +276,7 @@ ye_discography = {
             "Writer(s)" : ["kanye west", "lonnie Lynn", "gil-scott heron"],
             "Producer(s)" : ["kanye west"],
             "Sample" : [],
-            "Track Description" : ["Perfmored in it's entirety by common"],
+            "Track Description" : ["Performed in it's entirety by common"],
             "Track Number" : 7,
         },
         "Crack Music" : {
@@ -643,9 +643,219 @@ ye_discography = {
             "Track Description" : [],
             "Track Number" : 12,
         }
+    },
+    "My Beautiful Dark Twisted Fantasy" : {
+        "Dark Fantasy" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 1,
+        },
+        "Gorgeous" : {
+            "Duration": 0,
+            "Feature(s)" : ["kid cudi", "raekwon"],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 2,
+        },
+        "Power" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 3,
+        },
+        "All of the Lights (Interlude)" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 4,
+        },
+        "All of the Lights" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 5,
+        },
+        "Monster" : {
+            "Duration": 0,
+            "Feature(s)" : ["Jay-Z", "Rick Ross", "Nicki Minaj", "Bon Iver"],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 6,
+        },
+        "So Appalled" : {
+            "Duration": 0,
+            "Feature(s)" : ["swizz beatz", "jay-z", "pusha t", "cyhi the prynce" ],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 7,
+        },
+        "Devil in a New Dress" : {
+            "Duration": 0,
+            "Feature(s)" : ["Rick Ross"],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 8,
+        },
+        "Runaway" : {
+            "Duration": 0,
+            "Feature(s)" : ["pusha t"],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 9,
+        },
+        "Hell of a Life" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 10,
+        },
+        "Blame Game" : {
+            "Duration": 0,
+            "Feature(s)" : ["john legend"],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 11,
+        },
+        "Lost in the World" : {
+            "Duration": 0,
+            "Feature(s)" : ["bon iver"],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 12,
+        },
+        "Who Will Survive in America" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 13,
+        }
+    },
+    "Yeezus" : {
+        "On Sight" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 1,
+        },
+        "Black Skinhead" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 2,
+        },
+        "I Am a God" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 3,
+        },
+        "New Slaves" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 4,
+        },
+        "Hold My Liquor" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 5,
+        },
+        "I'm in It" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 6,
+        },
+        "Blood on the Leaves" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 7,
+        },
+        "Guilt Trip" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 8,
+        },
+        "Send it Up" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 9,
+        },
+        "Bound 2" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 10,
+        }
     }
 }
-
 with open("ye_discography.json", "w") as f: 
     f.write(json.dumps(ye_discography, indent=4))
 
@@ -665,19 +875,19 @@ def feature_artist_search(album_filter= None):
         if artist_found:
             print(f"Kanye west has featured with {searched_artist.title()} {total_count} times on the following song(s): ")
             for track, album in matches:
-                print(f"{track}, from the album {album}")          
+                print(f"{track}, from the album {album}.")          
             #print(f"Kanye west has featured with {searched_artist} {total_count} times on the following song(s): \n{matches}, from the album {album}.")
         elif artist_found == False:
             print(f"Kanye West has not featured with {searched_artist} on any songs yet.")    
         while loop_again.lower() != "y" and loop_again.lower() != "n":
-            loop_again = input("Do you want to search again? (y/n): ")
+            loop_again = input("Do you want to search again? (y/n): ").strip().lower()
             if loop_again.lower() == "y":
                 continue
             elif loop_again.lower() == "n":
                 print("(back to main menu...)")
-                break
+                main_menu()
             else:
-                loop_again = input("Invalid input. Do you want to search again? (y/n): ")
+                loop_again = input("Invalid input. Do you want to search again? (y/n): ").strip().lower()
 
 def count_total_ye_songs():
     total_songs = 0
@@ -733,19 +943,19 @@ album_alias_titles = {
 
 def main_menu():
     while True:
-        print("Your options in program are: \nRandom Generator \nTrack Search \nCollab Search \nExit")
+        print("Your options in program are: \n1.) Random Generator - Generates a random Kanye West song of the day \n2.) Track Search - Search for a song by track number from different Kanye West albums \n3.) Collab Search - Search to see how many times Kanye West has worked with a specific artist \nExit")
         user_choice = input("What is your selection? ").strip().lower()
-        if user_choice == "Random Generator".strip().lower():
+        if user_choice == "Random Generator".strip().lower() or user_choice == 1:
             random_ye_generator()
-        elif user_choice == "Exit".lower().strip():
+        elif user_choice == "Exit".lower().strip() or user_choice == 4:
             for x in range (3):
                 print("Exiting Kanye West Song Database..")
                 time.sleep(0.9)
             print("He made Graduation...")
             sys.exit()
-        elif user_choice == "track Search".lower().strip():
+        elif user_choice == "track Search".lower().strip() or user_choice == 2:
             track_search()
-        elif user_choice == "collab Search".lower().strip():
+        elif user_choice == "collab Search".lower().strip() or user_choice == 3:
             feature_artist_search()
         else:
             #print("Invalid selection. Please select again.")
@@ -758,7 +968,8 @@ def invalid_flvr_txt():
     print(flv_txt) 
 
 def album_choice():
-    while True:
+    search_again = True
+    while search_again:
         album_choice = input("Please enter a Kanye West album to index: ").strip().lower()
         for album, info in album_alias_titles.items():
             if album_choice in info["Album Nicknames"]:
@@ -787,8 +998,8 @@ def track_search():
 
 
 
-#Start_of_Run_Process
 
+#Start_of_Run_Process
 introduction(count_total_ye_songs())
 main_menu()
 

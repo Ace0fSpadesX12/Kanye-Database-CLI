@@ -423,7 +423,7 @@
             ],
             "Sample": [],
             "Track Description": [
-                "Perfmored in it's entirety by common"
+                "Performed in it's entirety by common"
             ],
             "Track Number": 7
         },
@@ -958,6 +958,198 @@
             "Sample": [],
             "Track Description": [],
             "Track Number": 12
+        }
+    },
+    "My Beautiful Dark Twisted Fantasy": {
+        "Dark Fantasy": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 1
+        },
+        "Gorgeous": {
+            "Duration": 0,
+            "Feature(s)": [
+                "kid cudi",
+                "raekwon"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 2
+        },
+        "Power": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 3
+        },
+        "All of the Lights (Interlude)": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 4
+        },
+        "All of the Lights": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 5
+        },
+        "Monster": {
+            "Duration": 0,
+            "Feature(s)": [
+                "Jay-Z",
+                "Rick Ross",
+                "Nicki Minaj",
+                "Bon Iver"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 6
+        },
+        "So Appalled": {
+            "Duration": 0,
+            "Feature(s)": [
+                "swizz beatz",
+                "jay-z",
+                "pusha t",
+                "cyhi the prynce"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 7
+        },
+        "Devil in a New Dress": {
+            "Duration": 0,
+            "Feature(s)": [
+                "Rick Ross"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 8
+        },
+        "Runaway": {
+            "Duration": 0,
+            "Feature(s)": [
+                "pusha t"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 9
+        },
+        "Hell of a Life": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 10
+        },
+        "Blame Game": {
+            "Duration": 0,
+            "Feature(s)": [
+                "john legend"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 11
+        },
+        "Lost in the World": {
+            "Duration": 0,
+            "Feature(s)": [
+                "bon iver"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 12
+        },
+        "Who Will Survive in America": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 13
         }
     }
 }
