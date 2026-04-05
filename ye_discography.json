@@ -86,7 +86,9 @@
                 "gwen gordy fuqua",
                 "sandra greene"
             ],
-            "Producer(s)": "kanye west",
+            "Producer(s)": [
+                "kanye west"
+            ],
             "Sample": [],
             "Track Description": [],
             "Track Number": 6
@@ -341,7 +343,9 @@
             "Producer(s)": [
                 "kanye west"
             ],
-            "Sample": [],
+            "Sample": [
+                "contains excerpts of 'Someone That I Used to Love' by natalie cole"
+            ],
             "Track Description": [],
             "Track Number": 1
         },
@@ -355,7 +359,9 @@
                 "kanye west",
                 "jon brion"
             ],
-            "Sample": [],
+            "Sample": [
+                "contains excerpts of 'Someone That I Used to Love' by natalie cole"
+            ],
             "Track Description": [],
             "Track Number": 2
         },
@@ -368,7 +374,9 @@
             "Producer(s)": [
                 "kanye west"
             ],
-            "Sample": [],
+            "Sample": [
+                "contains samples of 'move on up' as performed by curtis mayfield"
+            ],
             "Track Description": [],
             "Track Number": 3
         },
@@ -1150,6 +1158,138 @@
             "Sample": [],
             "Track Description": [],
             "Track Number": 13
+        }
+    },
+    "Yeezus": {
+        "On Sight": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 1
+        },
+        "Black Skinhead": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 2
+        },
+        "I Am a God": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 3
+        },
+        "New Slaves": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 4
+        },
+        "Hold My Liquor": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 5
+        },
+        "I'm in It": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 6
+        },
+        "Blood on the Leaves": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 7
+        },
+        "Guilt Trip": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 8
+        },
+        "Send it Up": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 9
+        },
+        "Bound 2": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 10
         }
     }
 }

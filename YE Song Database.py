@@ -62,8 +62,8 @@ ye_discography = {
             "Duration": 324,
             "Feature(s)" : ["consequence", "glc"],
             "Writer(s)" : ["kanye west", "leonard harris", "dexter mills", 
-                "marvin gaye", "gwen gordy fuqua", "sandra greene"],
-            "Producer(s)" : "kanye west",
+            "marvin gaye", "gwen gordy fuqua", "sandra greene"],
+            "Producer(s)" : ["kanye west"],
             "Sample" : [],
             "Track Description" : [],
             "Track Number" : 6,
@@ -221,7 +221,7 @@ ye_discography = {
             "Feature(s)" : [],
             "Writer(s)" : ["michael masser", "gerry goffin"],
             "Producer(s)" : ["kanye west"],
-            "Sample" : [],
+            "Sample" : ["contains excerpts of 'Someone That I Used to Love' by natalie cole"],
             "Track Description" : [],
             "Track Number" : 1,
         },
@@ -230,7 +230,7 @@ ye_discography = {
             "Feature(s)" : ["adam levine"],
             "Writer(s)" : [],
             "Producer(s)" : ["kanye west", "jon brion"],
-            "Sample" : [],
+            "Sample" : ["contains excerpts of 'Someone That I Used to Love' by natalie cole"],
             "Track Description" : [],
             "Track Number" : 2,
         },
@@ -239,7 +239,7 @@ ye_discography = {
             "Feature(s)" : ["lupe fiasco"],
             "Writer(s)" : [],
             "Producer(s)" : ["kanye west"],     #21 Song album.
-            "Sample" : [],                        #Release date 2005
+            "Sample" : ["contains samples of 'move on up' as performed by curtis mayfield"],                        #Release date 2005
             "Track Description" : [],
             "Track Number" : 3,
         },
@@ -873,12 +873,12 @@ def feature_artist_search(album_filter= None):
                     total_count += 1
                     matches.append((track, album))  #save each matching track and album
         if artist_found:
-            print(f"Kanye west has featured with {searched_artist.title()} {total_count} times on the following song(s): ")
+            print(f"Kanye west has featured with {searched_artist.title()} {total_count} time(s) on the following song(s): ")
             for track, album in matches:
                 print(f"{track}, from the album {album}.")          
             #print(f"Kanye west has featured with {searched_artist} {total_count} times on the following song(s): \n{matches}, from the album {album}.")
         elif artist_found == False:
-            print(f"Kanye West has not featured with {searched_artist} on any songs yet.")    
+            print(f"Kanye West has not featured with {searched_artist.title()} on any songs yet.")    
         while loop_again.lower() != "y" and loop_again.lower() != "n":
             loop_again = input("Do you want to search again? (y/n): ").strip().lower()
             if loop_again.lower() == "y":
@@ -920,7 +920,7 @@ def introduction(count_total_ye_songs):
         print("Initializing Kanye West Song Database...")
         time.sleep(.5)
     print(f"Welcome to the most (prospective) extensive kanye west database on the web. Host of a whopping {count_total_ye_songs} songs across his discography!")
-    input("...Press Enter to log in...")
+    input("*..Press Enter to log in..*")
 
 album_alias_titles = {
     "The College Dropout" : {
@@ -938,25 +938,33 @@ album_alias_titles = {
     "808s & Heartbreaks" : {
         "Song Count" : 12,
         "Album Nicknames" : ["808s & heartbreaks", "4", "#4", "808s", "heartbreaks", "4th"],
+    },
+    "My Beautiful Dark Twisted Fantasy" : {
+        "Song Count" : 16,
+        "Album Nicknames" : ["my beautiful dark twisted fantasy", "twisted fantasy", "5", "#5", "dark fantasy", "5th", "mbdtf"],
+    },
+    "Yeezus" : {
+        "Song Count" : 13,
+        "Album Nicknames" : ["yeezus", "6", "#6", "6th"],
     }
 }
 
 def main_menu():
     while True:
-        print("Your options in program are: \n1.) Random Generator - Generates a random Kanye West song of the day \n2.) Track Search - Search for a song by track number from different Kanye West albums \n3.) Collab Search - Search to see how many times Kanye West has worked with a specific artist \nExit")
+        print("Your options in program are: \n1.) Random Generator - Generates a random Kanye West song of the day \n2.) Track Search - Search for a song by track number from different Kanye West albums \n3.) Collab Search - Search to see how many times Kanye West has worked with a specific artist \n4.) Exit Program")
         user_choice = input("What is your selection? ").strip().lower()
-        if user_choice == "Random Generator".strip().lower() or user_choice == 1:
+        if user_choice == "Random Generator".strip().lower() or user_choice == "1":
             random_ye_generator()
-        elif user_choice == "Exit".lower().strip() or user_choice == 4:
+        elif user_choice == "track Search".lower().strip() or user_choice == "2":
+            track_search()
+        elif user_choice == "collab Search".lower().strip() or user_choice == "3":
+            feature_artist_search()
+        elif user_choice == "Exit".lower().strip() or user_choice == "4":
             for x in range (3):
                 print("Exiting Kanye West Song Database..")
                 time.sleep(0.9)
             print("He made Graduation...")
             sys.exit()
-        elif user_choice == "track Search".lower().strip() or user_choice == 2:
-            track_search()
-        elif user_choice == "collab Search".lower().strip() or user_choice == 3:
-            feature_artist_search()
         else:
             #print("Invalid selection. Please select again.")
             invalid_flvr_txt()
@@ -970,7 +978,7 @@ def invalid_flvr_txt():
 def album_choice():
     search_again = True
     while search_again:
-        album_choice = input("Please enter a Kanye West album to index: ").strip().lower()
+        album_choice = input("Please enter a Kanye West album to index from: ").strip().lower()
         for album, info in album_alias_titles.items():
             if album_choice in info["Album Nicknames"]:
                 print(f"You've selected the album: {album}, with a total of {info['Song Count']} songs.")
@@ -1003,16 +1011,13 @@ def track_search():
 introduction(count_total_ye_songs())
 main_menu()
 
+#total = 0
+#for song in ye_discography["Yeezus"].keys():
+  #  total += 1
+  #  print(str(total)+".", song)  #Detailed track details tentative
 
 
-
-
-
-
-
-
-
-#print(f"Kanye west has featured with {searched_artist} {total_count} times on the following song(s): \n{track}, from the album {album}.")
+#py -m PyInstaller --onefile "Ye Song Database.py" Future turn to exe command 
 
 
 
