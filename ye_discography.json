@@ -17,7 +17,9 @@
             "Duration": 239,
             "Feature(s)": [],
             "Writer(s)": [
-                "kanye west, miri ben-ari, ross vannelli"
+                "kanye west",
+                "miri ben-ari",
+                "ross vannelli"
             ],
             "Producer(s)": [
                 "kanye west"
@@ -1575,6 +1577,105 @@
             "Sample": [],
             "Track Description": [],
             "Track Number": 20
+        }
+    },
+    "Ye": {
+        "I Thought About Killing You": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 1
+        },
+        "Yikes": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 2
+        },
+        "All Mine": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 3
+        },
+        "Wouldn't Leave": {
+            "Duration": 0,
+            "Feature(s)": [
+                "partynextdoor"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 4
+        },
+        "No Mistakes": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 5
+        },
+        "Ghost Town": {
+            "Duration": 0,
+            "Feature(s)": [
+                "partynextdoor",
+                "070 shake",
+                "kid cudi"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 6
+        },
+        "Violent Crimes": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 7
         }
     }
 }

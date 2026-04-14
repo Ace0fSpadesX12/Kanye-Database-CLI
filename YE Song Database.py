@@ -25,7 +25,7 @@ ye_discography = {
         "We Don't Care" : {
             "Duration": 239,
             "Feature(s)" : [],
-            "Writer(s)" : ["kanye west, miri ben-ari, ross vannelli"],
+            "Writer(s)" : ["kanye west", "miri ben-ari", "ross vannelli"],
             "Producer(s)" : ["kanye west"],
             "Sample" : ["we don't care contains samples of 'I Just Wanna Stop' written by ross vannelli and performed by the jimmy castor bunch"],
             "Track Description" : [],
@@ -1036,12 +1036,77 @@ ye_discography = {
             "Track Description" : [],
             "Track Number" : 20,
         }
+    },
+    "Ye" : {
+        "I Thought About Killing You" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 1,
+        },
+        "Yikes" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 2,
+        },
+        "All Mine" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 3,
+        },
+        "Wouldn't Leave" : {
+            "Duration": 0,
+            "Feature(s)" : ["partynextdoor"],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 4,
+        },
+        "No Mistakes" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 5,
+        },
+        "Ghost Town" : {
+            "Duration": 0,
+            "Feature(s)" : ["partynextdoor", "070 shake", "kid cudi"],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 6,
+        },
+        "Violent Crimes" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 7,
+        }
     }
 }
 
-
 with open("ye_discography.json", "w") as f: 
     f.write(json.dumps(ye_discography, indent=4))
+
 
 def feature_artist_search(album_filter= None):
     while True:   
@@ -1109,50 +1174,55 @@ def introduction(count_total_ye_songs):
 album_alias_titles = {
     "The College Dropout" : {
         "Song Count" : 22,
-        "Album Nicknames" : ["tcd", "1", "#1","college dropout", "1st", "1st album", "dropout", "the college dropout"],
+        "album nicknames" : ["tcd", "1", "#1","college dropout", "tcdo", "1st", "1st album", "dropout", "the college dropout"],
     },
     "Late Registration" : {
         "Song Count" : 21,
-        "Album Nicknames" : ["lr", "late registration", "late", "reg", "2", "#2", "late reg", "2nd album", "2nd"],
+        "album nicknames" : ["lr", "late registration", "late", "reg", "2", "#2", "late reg", "2nd album", "2nd"],
     },
     "Graduation" : {
         "Song Count" : 16,
-        "Album Nicknames" : ["grad", "3", "#3", "graduation", "3rd", "3rd album"],
+        "album nicknames" : ["grad", "3", "#3", "graduation", "3rd", "3rd album"],
     },
     "808s & Heartbreaks" : {
         "Song Count" : 12,
-        "Album Nicknames" : ["808s & heartbreaks", "4", "#4", "808s", "heartbreaks", "4th album", "4th", "808", "hb"],
+        "album nicknames" : ["808s & heartbreaks", "4", "#4", "808s", "heartbreaks", "4th album", "4th", "808", "hb"],
     },
     "My Beautiful Dark Twisted Fantasy" : {
         "Song Count" : 16,
-        "Album Nicknames" : ["my beautiful dark twisted fantasy", "twisted fantasy", "5", "#5", "5th album", "dark fantasy", "5th", "mbdtf", "dtf", "tf"],
+        "album nicknames" : ["my beautiful dark twisted fantasy", "twisted fantasy", "5", "#5", "5th album", "dark fantasy", "5th", "mbdtf", "dtf", "tf"],
     },
     "Yeezus" : {
         "Song Count" : 13,
-        "Album Nicknames" : ["yeezus", "6", "#6", "6th", "6th album"],
+        "album nicknames" : ["yeezus", "6", "#6", "6th", "6th album"],
     },
     "The Life of Pablo" : {
         "Song Count" : 20,
-        "Album Nicknames" : ["the life of pablo", "7", "7th", "tlop", "pablo", "life of pablo", "7th album"],
+        "album nicknames" : ["the life of pablo", "7", "7th", "tlop", "pablo", "life of pablo", "7th album"],
+    },
+    "Ye" : {
+        "Song Count" : 7,
+        "album nicknames" : ["ye", "8", "8th", "8th album"],
     }
 }
 
 #Shorthand album titles
-TCD = album_alias_titles["The College Dropout"]["Album Nicknames"]
-LR = album_alias_titles["Late Registration"]["Album Nicknames"]
-Graduation = album_alias_titles["Graduation"]["Album Nicknames"]
-_808s = album_alias_titles["808s & Heartbreaks"]["Album Nicknames"]
-MBDTF = album_alias_titles["My Beautiful Dark Twisted Fantasy"]["Album Nicknames"]
-Yeezus = album_alias_titles["Yeezus"]["Album Nicknames"]
-TLOP = album_alias_titles["The Life of Pablo"]["Album Nicknames"]
+TCD = album_alias_titles["The College Dropout"]["album nicknames"]
+LR = album_alias_titles["Late Registration"]["album nicknames"]
+Graduation = album_alias_titles["Graduation"]["album nicknames"]
+_808s = album_alias_titles["808s & Heartbreaks"]["album nicknames"]
+MBDTF = album_alias_titles["My Beautiful Dark Twisted Fantasy"]["album nicknames"]
+Yeezus = album_alias_titles["Yeezus"]["album nicknames"]
+TLOP = album_alias_titles["The Life of Pablo"]["album nicknames"]
+Ye = album_alias_titles["Ye"]["album nicknames"]
 
 
 
 
 def main_menu():
     while True:
-        print("Your options in program are: \n1.) Random Generator - Generates a random Kanye West song of the day \n2.) Track Search - Search for a song by track number from different Kanye West albums \n3.) Collab Search - Search to see how many times Kanye West has worked with a specific artist \n4.) Trivia Mode - Play a trivia game to see how well you know Kanye West \n5.) Exit Program - Terminate runtime")
-        user_choice = input("What is your selection? ").strip().lower()
+        print("Your options in program are: \n1.) Random Generator - Generates a random Kanye West song of the day \n2.) Track Search - Search for a song by track number from different Kanye West albums \n3.) Collab Search - Search to see how many times a specific artist has worked with Kanye West \n4.) Trivia Mode - Play a trivia game to see how well you know Kanye West \n5.) Exit Program - Terminate runtime")
+        user_choice = input("\nWhat is your selection? ").strip().lower()
         if user_choice == "Random Generator".strip().lower() or user_choice == "1":
             random_ye_generator()
         elif user_choice == "track Search".lower().strip() or user_choice == "2":
@@ -1182,7 +1252,7 @@ def album_choice():
     while search_again:
         album_choice = input("Please enter a Kanye West album to index from: ").strip().lower()
         for album, info in album_alias_titles.items():
-            if album_choice in info["Album Nicknames"]:
+            if album_choice in info["album nicknames"]:
                 print(f"You've selected the album: {album}, with a total of {info['Song Count']} songs.")
                 return album , info["Song Count"]
         else:
@@ -1239,18 +1309,21 @@ def trivia_mode():
         elif trivia_answer[0] == "The Life of Pablo" and user_answer in TLOP:
             trivia_score += 1
             print(f"Correct! Score Streak: {trivia_score}")
+        elif trivia_answer[0] == "Ye" and user_answer in Ye:
+            trivia_score += 1
+            print(f"Correct! Score Streak: {trivia_score}")
         else:
             trivia_score = 0 
             print(f"Wrong! The correct answer was {trivia_answer[0]}.")
             print(f"Score Streak Reset: {trivia_score}")
-
     print(f"You win!! Final Score: {trivia_score}")
-    main_menu()
+
+
 
 
 #Start_of_Run_Process
-introduction(count_total_ye_songs())
-main_menu()
+#introduction(count_total_ye_songs())
+#main_menu()
 
 #total = 0
 #for song in ye_discography["Yeezus"].keys():
