@@ -1677,5 +1677,162 @@
             "Track Description": [],
             "Track Number": 7
         }
+    },
+    "Jesus is King": {
+        "Every Hour": {
+            "Duration": 0,
+            "Feature(s)": [
+                "sunday service choir"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 1
+        },
+        "Selah": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 2
+        },
+        "Follow God": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 3
+        },
+        "Closed On Sundays": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 4
+        },
+        "On God": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 5
+        },
+        "Everything We Need": {
+            "Duration": 0,
+            "Feature(s)": [
+                "ty dolla sign",
+                "ant clemons"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 6
+        },
+        "Water": {
+            "Duration": 0,
+            "Feature(s)": [
+                "ant clemons"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 7
+        },
+        "God Is": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 8
+        },
+        "Hands On": {
+            "Duration": 0,
+            "Feature(s)": [
+                "fred hammond"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 9
+        },
+        "Use This Gospel": {
+            "Duration": 0,
+            "Feature(s)": [
+                "clipse",
+                "kenny g"
+            ],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 10
+        },
+        "Jesus is Lord": {
+            "Duration": 0,
+            "Feature(s)": [],
+            "Writer(s)": [
+                "kanye west"
+            ],
+            "Producer(s)": [
+                "kanye west"
+            ],
+            "Sample": [],
+            "Track Description": [],
+            "Track Number": 11
+        }
     }
 }

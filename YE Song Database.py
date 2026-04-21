@@ -1101,12 +1101,112 @@ ye_discography = {
             "Track Description" : [],
             "Track Number" : 7,
         }
+    },
+    "Jesus is King" : {
+        "Every Hour" : {
+            "Duration": 0,
+            "Feature(s)" : ["sunday service choir"],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 1,
+        },
+        "Selah" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 2,
+        },
+        "Follow God" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 3,
+        },
+        "Closed On Sundays" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 4,
+        },
+        "On God" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 5,
+        },
+        "Everything We Need" : {
+            "Duration": 0,
+            "Feature(s)" : ["ty dolla sign", "ant clemons"],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 6,
+        },
+        "Water" : {
+            "Duration": 0,
+            "Feature(s)" : ["ant clemons"],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 7,
+        },
+        "God Is" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 8,
+        },
+        "Hands On" : {
+            "Duration": 0,
+            "Feature(s)" : ["fred hammond"],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 9,
+        },
+        "Use This Gospel" : {
+            "Duration": 0,
+            "Feature(s)" : ["clipse", "kenny g"],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 10,
+        },
+        "Jesus is Lord" : {
+            "Duration": 0,
+            "Feature(s)" : [],
+            "Writer(s)" : ["kanye west"],
+            "Producer(s)" : ["kanye west"],
+            "Sample" : [],
+            "Track Description" : [],
+            "Track Number" : 11,
+        }
     }
 }
 
 with open("ye_discography.json", "w") as f: 
     f.write(json.dumps(ye_discography, indent=4))
-
 
 def feature_artist_search(album_filter= None):
     while True:   
@@ -1126,14 +1226,16 @@ def feature_artist_search(album_filter= None):
             for track, album in matches:
                 print(f"{track}, from the album {album}.")          
             #print(f"Kanye west has featured with {searched_artist} {total_count} times on the following song(s): \n{matches}, from the album {album}.")
+        elif artist_found == False and searched_artist.lower().strip() == "kanye west" or searched_artist == "ye":
+            print("Kanye West has featured with Kanye West on ALL songs!")
         elif artist_found == False:
-            print(f"Kanye West has not featured with {searched_artist.title()} on any songs yet.")    
+            print(f"{searched_artist.title()} has not featured with Kanye West on any songs yet.")    
         while loop_again.lower() != "y" and loop_again.lower() != "n":
             loop_again = input("Do you want to search again? (y/n): ").strip().lower()
             if loop_again.lower() == "y":
                 continue
             elif loop_again.lower() == "n":
-                print("(back to main menu...)")
+                print("(back to main menu...)\n")
                 main_menu()
             else:
                 loop_again = input("Invalid input. Do you want to search again? (y/n): ").strip().lower()
@@ -1188,7 +1290,7 @@ album_alias_titles = {
     },
     "808s & Heartbreaks" : {
         "Song Count" : 12,
-        "album nicknames" : ["808s & heartbreaks", "4", "#4", "808s", "heartbreaks", "4th album", "4th", "808", "hb"],
+        "album nicknames" : ["808s & heartbreaks", "4", "#4", "808s and heartbreaks", "808s", "heartbreaks", "4th album", "4th", "808", "hb"],
     },
     "My Beautiful Dark Twisted Fantasy" : {
         "Song Count" : 16,
@@ -1205,7 +1307,15 @@ album_alias_titles = {
     "Ye" : {
         "Song Count" : 7,
         "album nicknames" : ["ye", "8", "8th", "8th album"],
-    }
+    },
+    "Jesus is King" : {
+        "Song Count" : 11,
+        "album nicknames" : ["jesus is king", "9", "9th", "9th album", "jik"],
+    },
+    "Donda" : {
+        "Song Count" : 8,
+        "album nicknames" : ["donda", "10", "10th", "10th album"],
+    },
 }
 
 #Shorthand album titles
@@ -1217,6 +1327,8 @@ MBDTF = album_alias_titles["My Beautiful Dark Twisted Fantasy"]["album nicknames
 Yeezus = album_alias_titles["Yeezus"]["album nicknames"]
 TLOP = album_alias_titles["The Life of Pablo"]["album nicknames"]
 Ye = album_alias_titles["Ye"]["album nicknames"]
+JIK = album_alias_titles["Jesus is King"]["album nicknames"]
+DONDA = album_alias_titles["Donda"]["album nicknames"]
 
 
 def main_menu():
@@ -1288,60 +1400,65 @@ def trivia_mode():
             trivia_list.append([album, song])
     
     print("Try to answer which albums a set of Kanye West songs are from. Can you complete his entire discography?")
+    print("You can guess using full album names or abbreviations (e.g., TCD, LR, Graduation, 808s, MBDTF, Yeezus, TLOP, etc.")
     print("*" * 10)
     
     if hi_score.get("high score", 0) > 0:
         print(f"Your current high score is: {hi_score['high score']}.")
     
     while current_score < total_ye_songs:
+        trivia_item = random.choice(trivia_list)
         trivia_album, trivia_question = random.choice(trivia_list)
-        player_answer = input(f"Which Kanye West album is the song {trivia_question} from? ")
+        player_answer = input(f"Which Kanye West album is the song {trivia_question} from? ").lower().strip()
         if player_answer in TCD and trivia_album == "The College Dropout":
             current_score += 1
+            trivia_list.remove(trivia_item)
             print(f"Correct! Score: {current_score}")
         elif player_answer in LR and trivia_album == "Late Registration":
             current_score += 1
+            trivia_list.remove(trivia_item)
             print(f"Correct! Score: {current_score}")
         elif player_answer in Graduation and trivia_album == "Graduation":
             current_score += 1
+            trivia_list.remove(trivia_item)
             print(f"Correct! Score: {current_score}")
         elif player_answer in _808s and trivia_album == "808s & Heartbreaks":
             current_score += 1
+            trivia_list.remove(trivia_item)
             print(f"Correct! Score: {current_score}")
         elif player_answer in MBDTF and trivia_album == "My Beautiful Dark Twisted Fantasy":
             current_score += 1
+            trivia_list.remove(trivia_item)
             print(f"Correct! Score: {current_score}")
         elif player_answer in Yeezus and trivia_album == "Yeezus":
             current_score += 1
+            trivia_list.remove(trivia_item)
             print(f"Correct! Score: {current_score}")
         elif player_answer in TLOP and trivia_album == "The Life of Pablo":
             current_score += 1
+            trivia_list.remove(trivia_item)
             print(f"Correct! Score: {current_score}")
         elif player_answer in Ye and trivia_album == "Ye":
             current_score += 1
+            trivia_list.remove(trivia_item)
+            print(f"Correct! Score: {current_score}")
+        elif player_answer in JIK and trivia_album == "Jesus Is King":
+            current_score += 1
+            trivia_list.remove(trivia_item)
             print(f"Correct! Score: {current_score}")
         else:
-            print(f"Oops. Game Over! Your score was {current_score} out of {total_ye_songs}. Better luck next time.")
-            
+            print(f"Oops! {trivia_question} is actually from the album {trivia_album}.")
+            print(f"Game Over! Your score was {current_score} out of {total_ye_songs}. Better luck next time.\n")            
             if current_score > hi_score['high score']:
                     with open("Trivia_High_Score.json", "w") as f:
                         json.dump({"high score": current_score}, f)
-            break
-        
+            break        
         if current_score == total_ye_songs:
             print(f"Congratulations! You're a Kanye West superfan! You got all {current_score} songs out of a possible {total_ye_songs}.")
             if current_score > hi_score['high score']:
                 with open("Trivia_High_Score.json", "w") as f:
                     json.dump({"high score": current_score}, f)
             break
-
-        
-        
-
-
-
-
-
 
 #Start_of_Run_Process
 introduction(count_total_ye_songs())
@@ -1361,25 +1478,6 @@ main_menu()
   #      if album == "Ye": 
  #           print(song)
 
-#with open("ye.txt", "w") as file:
-  #  file.write("Score = 50")
-
-#with open("ye.txt", "r") as f:
- #   data = f.read()
-
-#new_data = data.split(" ")
-
-#score = int(new_data[2])
-
-#print(score * 2)
-
-
-
-test = ["cookie", 2, 3, 4, 5]
-
-print(len(test))
-
-print(count_total_ye_songs())
 
 
 
