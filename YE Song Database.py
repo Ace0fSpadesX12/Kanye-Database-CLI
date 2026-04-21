@@ -692,7 +692,7 @@ ye_discography = {
         },
         "Monster" : {
             "Duration": 0,
-            "Feature(s)" : ["Jay-Z", "Rick Ross", "Nicki Minaj", "Bon Iver"],
+            "Feature(s)" : ["jay-Z", "rick ross", "nicki minaj", "bon iver"],
             "Writer(s)" : ["kanye west"],
             "Producer(s)" : ["kanye west"],
             "Sample" : [],
@@ -710,7 +710,7 @@ ye_discography = {
         },
         "Devil in a New Dress" : {
             "Duration": 0,
-            "Feature(s)" : ["Rick Ross"],
+            "Feature(s)" : ["rick ross"],
             "Writer(s)" : ["kanye west"],
             "Producer(s)" : ["kanye west"],
             "Sample" : [],
@@ -1145,6 +1145,8 @@ def count_total_ye_songs():
             total_songs += 1
     return total_songs
 
+total_ye_songs = count_total_ye_songs()
+
 def random_ye_generator(): 
     while True:
         random_album = random.choice(list(ye_discography.keys()))
@@ -1217,8 +1219,6 @@ TLOP = album_alias_titles["The Life of Pablo"]["album nicknames"]
 Ye = album_alias_titles["Ye"]["album nicknames"]
 
 
-
-
 def main_menu():
     while True:
         print("Your options in program are: \n1.) Random Generator - Generates a random Kanye West song of the day \n2.) Track Search - Search for a song by track number from different Kanye West albums \n3.) Collab Search - Search to see how many times a specific artist has worked with Kanye West \n4.) Trivia Mode - Play a trivia game to see how well you know Kanye West \n5.) Exit Program - Terminate runtime")
@@ -1275,55 +1275,77 @@ def track_search():
     song_choice(chosen_album, song_count)
     main_menu()
 
-
-def trivia_mode():
-    print("Try to answer which albums a set of Kanye West songs are from. Can you get them all?\n*****")
+def trivia_mode():    
+    current_score = 115
+    hi_score = {"high score": 0}
     trivia_list = []
+
+    with open("Trivia_High_Score.json", "r") as f:
+        hi_score = json.load(f)
+    
     for album, songs in ye_discography.items():
         for song in songs.keys():
             trivia_list.append([album, song])
     
-    trivia_score = 0
-
-    while trivia_score < 10:
-        trivia_answer = (random.choice(trivia_list))
-        user_answer = input(f"Which Kanye West album is the song {trivia_answer[1]} from? ").strip().lower()
-        if trivia_answer[0] == "The College Dropout" and user_answer in TCD:
-            trivia_score += 1
-            print(f"Correct! Score Streak: {trivia_score}")
-        elif trivia_answer[0] == "Late Registration" and user_answer in LR:
-            trivia_score += 1
-            print(f"Correct! Score Streak: {trivia_score}")
-        elif trivia_answer[0] == "Graduation" and user_answer in Graduation:
-            trivia_score += 1
-            print(f"Correct! Score Streak: {trivia_score}")
-        elif trivia_answer[0] == "808s & Heartbreaks" and user_answer in _808s:
-            trivia_score += 1
-            print(f"Correct! Score Streak: {trivia_score}")
-        elif trivia_answer[0] == "My Beautiful Dark Twisted Fantasy" and user_answer in MBDTF:
-            trivia_score += 1
-            print(f"Correct! Score Streak: {trivia_score}")
-        elif trivia_answer[0] == "Yeezus" and user_answer in Yeezus:
-            trivia_score += 1
-            print(f"Correct! Score Streak: {trivia_score}")
-        elif trivia_answer[0] == "The Life of Pablo" and user_answer in TLOP:
-            trivia_score += 1
-            print(f"Correct! Score Streak: {trivia_score}")
-        elif trivia_answer[0] == "Ye" and user_answer in Ye:
-            trivia_score += 1
-            print(f"Correct! Score Streak: {trivia_score}")
+    print("Try to answer which albums a set of Kanye West songs are from. Can you complete his entire discography?")
+    print("*" * 10)
+    
+    if hi_score.get("high score", 0) > 0:
+        print(f"Your current high score is: {hi_score['high score']}.")
+    
+    while current_score < total_ye_songs:
+        trivia_album, trivia_question = random.choice(trivia_list)
+        player_answer = input(f"Which Kanye West album is the song {trivia_question} from? ")
+        if player_answer in TCD and trivia_album == "The College Dropout":
+            current_score += 1
+            print(f"Correct! Score: {current_score}")
+        elif player_answer in LR and trivia_album == "Late Registration":
+            current_score += 1
+            print(f"Correct! Score: {current_score}")
+        elif player_answer in Graduation and trivia_album == "Graduation":
+            current_score += 1
+            print(f"Correct! Score: {current_score}")
+        elif player_answer in _808s and trivia_album == "808s & Heartbreaks":
+            current_score += 1
+            print(f"Correct! Score: {current_score}")
+        elif player_answer in MBDTF and trivia_album == "My Beautiful Dark Twisted Fantasy":
+            current_score += 1
+            print(f"Correct! Score: {current_score}")
+        elif player_answer in Yeezus and trivia_album == "Yeezus":
+            current_score += 1
+            print(f"Correct! Score: {current_score}")
+        elif player_answer in TLOP and trivia_album == "The Life of Pablo":
+            current_score += 1
+            print(f"Correct! Score: {current_score}")
+        elif player_answer in Ye and trivia_album == "Ye":
+            current_score += 1
+            print(f"Correct! Score: {current_score}")
         else:
-            trivia_score = 0 
-            print(f"Wrong! The correct answer was {trivia_answer[0]}.")
-            print(f"Score Streak Reset: {trivia_score}")
-    print(f"You win!! Final Score: {trivia_score}")
+            print(f"Oops. Game Over! Your score was {current_score} out of {total_ye_songs}. Better luck next time.")
+            
+            if current_score > hi_score['high score']:
+                    with open("Trivia_High_Score.json", "w") as f:
+                        json.dump({"high score": current_score}, f)
+            break
+        
+        if current_score == total_ye_songs:
+            print(f"Congratulations! You're a Kanye West superfan! You got all {current_score} songs out of a possible {total_ye_songs}.")
+            if current_score > hi_score['high score']:
+                with open("Trivia_High_Score.json", "w") as f:
+                    json.dump({"high score": current_score}, f)
+            break
+
+        
+        
+
+
 
 
 
 
 #Start_of_Run_Process
-#introduction(count_total_ye_songs())
-#main_menu()
+introduction(count_total_ye_songs())
+main_menu()
 
 #total = 0
 #for song in ye_discography["Yeezus"].keys():
@@ -1334,18 +1356,30 @@ def trivia_mode():
 #py -m PyInstaller --onefile "Ye Song Database.py" Future turn to exe command 
 
 
+#for album, tracklist in ye_discography.items():
+   # for song, song_details in tracklist.items():
+  #      if album == "Ye": 
+ #           print(song)
+
+#with open("ye.txt", "w") as file:
+  #  file.write("Score = 50")
+
+#with open("ye.txt", "r") as f:
+ #   data = f.read()
+
+#new_data = data.split(" ")
+
+#score = int(new_data[2])
+
+#print(score * 2)
 
 
 
+test = ["cookie", 2, 3, 4, 5]
 
+print(len(test))
 
-
-
-
-
-
-
-
+print(count_total_ye_songs())
 
 
 
