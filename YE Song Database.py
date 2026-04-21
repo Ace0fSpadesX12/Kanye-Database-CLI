@@ -1276,7 +1276,7 @@ def track_search():
     main_menu()
 
 def trivia_mode():    
-    current_score = 115
+    current_score = 0
     hi_score = {"high score": 0}
     trivia_list = []
 
