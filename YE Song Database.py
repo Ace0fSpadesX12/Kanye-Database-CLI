@@ -281,7 +281,7 @@ ye_discography = {
         },
         "Crack Music" : {
             "Duration": 271,
-            "Feature(s)" : [],
+            "Feature(s)" : ["The Game"],
             "Writer(s)" : [],
             "Producer(s)" : ["kanye west"],
             "Sample" : [],
@@ -327,7 +327,7 @@ ye_discography = {
         "Diamonds from Sierra Leone (Remix)" : {
             "Duration": 233,
             "Feature(s)" : ["jay-z"],
-            "Writer(s)" : [],
+            "Writer(s)" : ["kanye west"],
             "Producer(s)" : ["kanye west"],
             "Sample" : [],
             "Track Description" : [],
@@ -335,8 +335,8 @@ ye_discography = {
         },
         "We Major" : {
             "Duration" : 448,
-            "Feature(s)" : [],
-            "Writer(s)" : [],
+            "Feature(s)" : ["nas", "really doe"],
+            "Writer(s)" : ["kanye west"],
             "Producer(s)" : ["kanye west"],
             "Sample" : [],
             "Track Description" : [],
@@ -380,7 +380,7 @@ ye_discography = {
         },
         "Gone" : {
             "Duration" : 333,
-            "Feature(s)" : [],
+            "Feature(s)" : ["consequence", "common"],
             "Writer(s)" : [],
             "Producer(s)" : ["kanye west"],
             "Sample" : [],
@@ -1285,7 +1285,7 @@ album_alias_titles = {
         "album nicknames" : ["lr", "late registration", "late", "reg", "2", "#2", "late reg", "2nd album", "2nd"],
     },
     "Graduation" : {
-        "Song Count" : 16,
+        "Song Count" : 14,
         "album nicknames" : ["grad", "3", "#3", "graduation", "3rd", "3rd album"],
     },
     "808s & Heartbreaks" : {
@@ -1313,7 +1313,7 @@ album_alias_titles = {
         "album nicknames" : ["jesus is king", "9", "9th", "9th album", "jik"],
     },
     "Donda" : {
-        "Song Count" : 8,
+        "Song Count" : 32,
         "album nicknames" : ["donda", "10", "10th", "10th album"],
     },
 }
@@ -1333,12 +1333,12 @@ DONDA = album_alias_titles["Donda"]["album nicknames"]
 
 def main_menu():
     while True:
-        print("Your options in program are: \n1.) Random Generator - Generates a random Kanye West song of the day \n2.) Track Search - Search for a song by track number from different Kanye West albums \n3.) Collab Search - Search to see how many times a specific artist has worked with Kanye West \n4.) Trivia Mode - Play a trivia game to see how well you know Kanye West \n5.) Exit Program - Terminate runtime")
+        print("Your options in program are as follows: \n\n1.) Random Generator - Generates a random Kanye West song of the day \n2.) Track Search - Search for a song by track number from different Kanye West albums for details on it \n3.) Collab Search - Search to see how many times a specific artist has worked with Kanye West \n4.) Trivia Mode - Play a trivia game to see how well you know Kanye West \n5.) Exit Program - Terminate runtime")
         user_choice = input("\nWhat is your selection? ").strip().lower()
         if user_choice == "Random Generator".strip().lower() or user_choice == "1":
             random_ye_generator()
         elif user_choice == "track Search".lower().strip() or user_choice == "2":
-            track_search()
+            song_search(album_choice())
         elif user_choice == "collab Search".lower().strip() or user_choice == "3":
             feature_artist_search()
         elif user_choice == "trivia mode".lower().strip() or user_choice == "4":
@@ -1362,30 +1362,58 @@ def invalid_flvr_txt():
 def album_choice():
     search_again = True
     while search_again:
-        album_choice = input("Please enter a Kanye West album to index from: ").strip().lower()
+        album_choice = input("Please enter a Kanye West album to search through: ").strip().lower()
+        found = False
         for album, info in album_alias_titles.items():
             if album_choice in info["album nicknames"]:
-                print(f"You've selected the album: {album}, with a total of {info['Song Count']} songs.")
-                return album , info["Song Count"]
+                print(f"You've selected the album: {album}, with a total of {info['Song Count']} songs.\n")
+                search_again = False
+                found = True
+                selected_album, details = album, info
+                break
+        if not found:
+            print("Album not found. Please try again.") 
+
+    tracklists = ye_discography[selected_album]
+
+    #print(tracklists, details)
+
+    for n, song in enumerate(tracklists, start=1):
+        print(str(n) + ".", song)
+    
+    song_query = int(input("\nEnter the song number you would like details for: "))
+
+    selected_song = None
+
+    for song_name, song_data in tracklists.items():
+        if song_data["Track Number"] == song_query:
+            selected_song = (song_name, song_data)
+            break
+    
+    while True:
+        if selected_song:
+            name, data = selected_song
+            print(f"\n🎵 {name}")
+            print(f"Track Number: {data['Track Number']}")
+            print(f"Duration: {data['Duration']} seconds")
+            print(f"Features: {', '.join(data['Feature(s)']).title().strip() or 'None'}")
+            print(f"Writers: {', '.join(data['Writer(s)']).title().strip()}")
+            print(f"Producers: {', '.join(data['Producer(s)']).title().strip()}")
+            print(f"Samples: {', '.join(data['Sample']) or 'None'}")
+            print(f"Track Description: {', '.join(data['Track Description']).title().strip() or 'None'}")
+            break
         else:
-            print("Album not found. Please try again.")
-                
-
-def song_choice(chosen_album, song_count):
-    if chosen_album in ye_discography.keys():
-        while True:
-            song_choice = int(input("Please enter a track number from the album to index: "))
-            for song, info in ye_discography[chosen_album].items():
-                if song_choice == info["Track Number"] and info["Feature(s)"]:
-                    print(f"You've selected the song: {song}, featuring {info['Feature(s)']}.")
-                    return song
-            else:
-                print(f"Out of index range. There are only {song_count} on this album! Please try again.")
-
-def track_search():
-    chosen_album, song_count = album_choice()
-    song_choice(chosen_album, song_count)
+            print("Song not found.")
+        
     main_menu()
+    
+
+def song_search(album_choice):
+    chosen_album = album_choice([0])
+    for album, tracklists in ye_discography.items():
+        for tracklist, details in tracklists.items():
+            if album == chosen_album:
+                print(tracklist, details["Track Number"], details["Song Title"], details["Feature(s)"])
 
 def trivia_mode():    
     current_score = 0
@@ -1410,6 +1438,7 @@ def trivia_mode():
         trivia_item = random.choice(trivia_list)
         trivia_album, trivia_question = random.choice(trivia_list)
         player_answer = input(f"Which Kanye West album is the song {trivia_question} from? ").lower().strip()
+
         if player_answer in TCD and trivia_album == "The College Dropout":
             current_score += 1
             trivia_list.remove(trivia_item)
@@ -1448,7 +1477,7 @@ def trivia_mode():
             print(f"Correct! Score: {current_score}")
         else:
             print(f"Oops! {trivia_question} is actually from the album {trivia_album}.")
-            print(f"Game Over! Your score was {current_score} out of {total_ye_songs}. Better luck next time.\n")            
+            print(f"Game Over! Your score was {current_score} out of a possible {total_ye_songs}. Better luck next time!\n")            
             if current_score > hi_score['high score']:
                     with open("Trivia_High_Score.json", "w") as f:
                         json.dump({"high score": current_score}, f)
@@ -1477,11 +1506,6 @@ main_menu()
    # for song, song_details in tracklist.items():
   #      if album == "Ye": 
  #           print(song)
-
-
-
-
-
 
 
 
